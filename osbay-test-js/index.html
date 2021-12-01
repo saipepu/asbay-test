@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="form" class="form">
+                <legend class="legend">LOGO</legend>
+                <div class="input-area">
+                    <div class="username-input-wrapper">
+                        <div class="username-input-icon"><img src="user.png" class="user-icon"></div>
+                        <input type="text" id="username" name="username" class="username-input" placeholder="User Name" required/>
+                        <div class="clean-username-input"><img src="cross.png" class="close-icon"></div>
+                    </div>
+                    <div class="pwd-input-wrapper">
+                        <div class="pwd-input-icon"><img src="padlock.png" class="padlock-icon"></div>
+                        <input type="password" id="password" class="pwd-input" placeholder="Password" required/>
+                        <div class="clean-pwd-input"><img src="cross.png" class="close-icon"></div>
+                    </div>
+                </div>
+                <div class="cta-area">
+                    <div class="reminder-me-wrapper">
+                        <input type="checkbox" class="checkbox"/>
+                        Remember Me
+                    </div>
+                    <div class="login-wrapper">
+                        <button class="login-btn">Login</button>
+                    </div>
+                    <div class="backup-area">
+                        Forget Your Password?<br/>
+                        <a href="#" class="click-here">Click Here</a>
+                    </div>
+                    <div class="fb-login-wrapper">
+                        <button class="fb-login-btn">Login With Facebook</button>
+                    </div>
+                    <div class="gmail-login-wrapper">
+                        <button class="gmail-login-btn">Login With Gmail</button>
+                    </div>
+                </div>
+                <div class="submit-btn-wrapper">
+                    <button type="submit" class="submit-btn">Create an Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.querySelector('form')
+        const username = document.getElementById('username')
+        const pwd = document.getElementById('password')
+        form.addEventListener('onsubmit', (e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
